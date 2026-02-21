@@ -1,9 +1,18 @@
-# TaskMate
+# Taskmate
 
-TaskMate is a full-stack prompt workspace:
-- React frontend chat UI with sessions/threads
+Taskmate is a generative AI workplace where you can chat with a single LLM or run multi-LLM sessions in which multiple models act as a counselor.
+It works with a free Gemini API key (or any other API key) and also supports local Ollama large models.
+The main purpose is text generation, code generation, and other multi-step tasks such as:
+- Summarizing and rewriting content
+- Drafting emails, docs, and reports
+- Explaining code and debugging suggestions
+- Planning tasks and producing checklists
+- Translating and simplifying text
+
+Core stack:
+- React frontend chat UI with sessions/threads and multi-LLM mode
 - FastAPI backend with auth, prompt APIs, and DB persistence
-- Gemini integration (with local fallback when provider/quota fails)
+- Provider layer for Gemini, other APIs, and local Ollama models (with fallback)
 
 ## Preview
 ### Home Page
